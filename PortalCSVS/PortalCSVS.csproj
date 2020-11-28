@@ -1,0 +1,1679 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Web"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{A3D6B700-B194-4E21-9695-D06CC669AAF0}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Portal"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Flow"
+                DefaultTargetSchema = "IE32Nav30"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "ASPNetPortal"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "Npgsql"
+                    AssemblyName = "Npgsql"
+                    HintPath = "Components\Npgsql.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "Default.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Default.aspx.cs"
+                    DependentUpon = "Default.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopDefault.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopDefault.aspx.cs"
+                    DependentUpon = "DesktopDefault.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModuleTitle.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModuleTitle.ascx.cs"
+                    DependentUpon = "DesktopModuleTitle.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopPortalBanner.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopPortalBanner.ascx.cs"
+                    DependentUpon = "DesktopPortalBanner.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    SubType = "Component"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.cs"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MobileModuleTitle.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "portal.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\AccessDenied.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\AccessDenied.aspx.cs"
+                    DependentUpon = "AccessDenied.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\EditAccessDenied.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\EditAccessDenied.aspx.cs"
+                    DependentUpon = "EditAccessDenied.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\Logoff.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\Logoff.aspx.cs"
+                    DependentUpon = "Logoff.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\ManageUsers.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\ManageUsers.aspx.cs"
+                    DependentUpon = "ManageUsers.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\ModuleDefinitions.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\ModuleDefinitions.aspx.cs"
+                    DependentUpon = "ModuleDefinitions.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\ModuleDefs.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\ModuleDefs.ascx.cs"
+                    DependentUpon = "ModuleDefs.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\ModuleSettings.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\ModuleSettings.aspx.cs"
+                    DependentUpon = "ModuleSettings.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\NotImplemented.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\NotImplemented.aspx.cs"
+                    DependentUpon = "NotImplemented.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\Register.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\Register.aspx.cs"
+                    DependentUpon = "Register.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\Register.aspx.resx"
+                    DependentUpon = "Register.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Admin\Roles.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\Roles.ascx.cs"
+                    DependentUpon = "Roles.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\SecurityRoles.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\SecurityRoles.aspx.cs"
+                    DependentUpon = "SecurityRoles.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\SiteSettings.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\SiteSettings.ascx.cs"
+                    DependentUpon = "SiteSettings.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\TabLayout.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\TabLayout.aspx.cs"
+                    DependentUpon = "TabLayout.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\Tabs.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\Tabs.ascx.cs"
+                    DependentUpon = "Tabs.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Admin\Users.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Admin\Users.ascx.cs"
+                    DependentUpon = "Users.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\AdminDB.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\AnnouncementsDB.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\Configuration.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\ContactsDB.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\DesktopControls.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\DiscussionDB.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\DocumentDB.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\EventsDB.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\HtmlTextDB.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\LinksDB.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Components\Security.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Data\Admin.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\config_auth_forms.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\config_auth_win.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\enigma.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\hart.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\Layout.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\logoneg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\m_ann.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\m_con.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\m_doc.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\m_dsc.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\m_evt.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\m_htm.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\m_img.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\m_lnk.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\m_ql.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\m_xml.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\mobilelogo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\moduledefs.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\modulesettings.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\moduletypedef.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\nightvis.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\perfmon.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\QLT2112.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\rolemembership.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\Roles.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\Roles1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\sales.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\sales.xsl"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\sample.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\sitesettings.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\tabbar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\tabs.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\vanlew.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Data\whataremodules.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\Announcements.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\Announcements.ascx.cs"
+                    DependentUpon = "Announcements.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\Contacts.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\Contacts.ascx.cs"
+                    DependentUpon = "Contacts.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\DiscussDetails.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\DiscussDetails.aspx.cs"
+                    DependentUpon = "DiscussDetails.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\Discussion.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\Discussion.ascx.cs"
+                    DependentUpon = "Discussion.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\Document.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\Document.ascx.cs"
+                    DependentUpon = "Document.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\EditAnnouncements.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\EditAnnouncements.aspx.cs"
+                    DependentUpon = "EditAnnouncements.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\EditContacts.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\EditContacts.aspx.cs"
+                    DependentUpon = "EditContacts.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\EditDocs.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\EditDocs.aspx.cs"
+                    DependentUpon = "EditDocs.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\EditEvents.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\EditEvents.aspx.cs"
+                    DependentUpon = "EditEvents.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\EditHtml.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\EditHtml.aspx.cs"
+                    DependentUpon = "EditHtml.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\EditImage.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\EditImage.aspx.cs"
+                    DependentUpon = "EditImage.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\EditLinks.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\EditLinks.aspx.cs"
+                    DependentUpon = "EditLinks.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\EditXml.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\EditXml.aspx.cs"
+                    DependentUpon = "EditXml.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\Events.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\Events.ascx.cs"
+                    DependentUpon = "Events.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\HtmlModule.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\HtmlModule.ascx.cs"
+                    DependentUpon = "HtmlModule.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\ImageModule.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\ImageModule.ascx.cs"
+                    DependentUpon = "ImageModule.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\Links.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\Links.ascx.cs"
+                    DependentUpon = "Links.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\QuickLinks.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\QuickLinks.ascx.cs"
+                    DependentUpon = "QuickLinks.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\Signin.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\Signin.ascx.cs"
+                    DependentUpon = "Signin.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\ViewDocument.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\ViewDocument.aspx.cs"
+                    DependentUpon = "ViewDocument.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DesktopModules\XmlModule.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DesktopModules\XmlModule.ascx.cs"
+                    DependentUpon = "XmlModule.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Docs\AddAnnouncement.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\AddContact.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\AddEvent.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\AddLink.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\AddMessage.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\AddModule.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\AddModuleDefinition.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\AddRole.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\AddTab.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\AddUser.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\AddUserRole.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_AccessDenied_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_AccessDenied_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_EditAccessDenied_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_EditAccessDenied_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_Logoff_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_Logoff_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_ManageUsers_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_ManageUsers_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_MobileAccessDenied_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_ModuleDefinitions_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_ModuleDefinitions_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_ModuleDefs_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_ModuleDefs_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_ModuleSettings_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_ModuleSettings_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_NotImplemented_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_NotImplemented_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_Register_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_Register_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_Roles_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_Roles_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_SecurityRoles_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_SecurityRoles_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_SiteSettings_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_SiteSettings_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_TabLayout_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_TabLayout_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_Tabs_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_Tabs_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_Users_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Admin_Users_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_AdminDB_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_AnnouncementsDB_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_Configuration_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_ContactsDB_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_DesktopControls_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_DiscussionDB_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_DocumentDB_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_EventsDB_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_HtmlTextDB_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_LinksDB_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_MobileControls_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Components_Security_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\custommodules.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Default_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Default_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DeleteAnnouncement.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DeleteContact.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DeleteDocument.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DeleteEvent.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DeleteLink.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DeleteModule.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DeleteModuleDefinition.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DeleteRole.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DeleteTab.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DeleteUserRole.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopDefault_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopDefault_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Announcements_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Announcements_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Contacts_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Contacts_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_DiscussDetails_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_DiscussDetails_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Discussion_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Discussion_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Document_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Document_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditAnnouncements_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditAnnouncements_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditContacts_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditContacts_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditDocs_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditDocs_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditEvents_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditEvents_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditHtml_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditHtml_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditImage_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditImage_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditLinks_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditLinks_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditXml_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_EditXml_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Events_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Events_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_HtmlModule_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_HtmlModule_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_ImageModule_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_ImageModule_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Links_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Links_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_QuickLinks_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_QuickLinks_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_Signin_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_SignIn_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_ViewDocument_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_ViewDocument_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_XmlModule_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModules_XmlModule_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModuleTitle_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopModuleTitle_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopPortalBanner_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\DesktopPortalBanner_ascx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Docs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetAnnouncements.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetAuthRoles.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetContacts.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetDocumentContent.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetDocuments.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetEvents.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetHtmlText.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetLinks.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetModuleDefinitions.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetModuleSettings.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetNextMessageId.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetPortalRoles.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetPortalSettings.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetPrevMessageId.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetRoleMembership.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetRolesByUser.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetSingleAnnouncement.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetSingleContact.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetSingleDocument.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetSingleEvent.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetSingleLink.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetSingleMessage.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetSingleModuleDefinition.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\getthreadmessages.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\gettoplevelmessages.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\GetUsers.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Global_asax.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Global_asax_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\MobileDefault_aspx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\MobileDefault_aspx_cs.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\MobileModules_Announcements_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\MobileModules_Contacts_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\MobileModules_Events_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\MobileModules_Text_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\MobileModuleTitle_ascx.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\portal_css.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\style.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateAnnouncement.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateContact.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateDocument.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateEvent.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateHtmlText.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateLink.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateModule.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateModuleDefinition.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateModuleOrder.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateModuleSetting.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdatePortalInfo.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateRole.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateTab.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateTabOrder.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UpdateUser.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\UserLogin.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\visualstudio_project_notes.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\Web_config.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\images\code-behind.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Docs\images\designerverbs.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\1x1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\aspnet.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\bars.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\delete.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\dn.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\edit.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\ffwd.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\frew.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\fwd.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\lt.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\minus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\navlink.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\node.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\plus.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\poweredby_simple.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\register.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\rew.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\rt.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\signin.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\sm_dotnet.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\spacer.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\up.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "MobileModules\Announcements.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "MobileModules\Contacts.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "MobileModules\Events.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "MobileModules\Text.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SourceViewer\1x1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SourceViewer\admin.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\AdminDB.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\announcements.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\configuration.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\contacts.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\Default.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\desktopcontrols.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\DesktopDefault.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\discussion.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\documents.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\events.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\globalasax.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\grid_background.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SourceViewer\htmldocument.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\image.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\links.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\logoff.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\manageusers.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\MobileControls.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\MobileDefault.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\ModuleDefinitions.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\ModuleSettings.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\portalconfig.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\portalcss.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\quicklinks.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\register.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\security.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\SecurityRoles.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\signin.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\srcview.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SourceViewer\style.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SourceViewer\TabLayout.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\tabview.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SourceViewer\useradd.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\userlogin.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\webconfig.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "SourceViewer\xmlxsl.src"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Uploads\sample.doc"
+                    BuildAction = "None"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

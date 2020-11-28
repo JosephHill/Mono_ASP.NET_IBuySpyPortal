@@ -1,0 +1,3 @@
+User Controls:SiteSettings.ascx|Admin_SiteSettings_ascx.htm, SiteSettings.ascx.cs|Admin_SiteSettings_ascx_cs.htm, Tabs.ascx|Admin_Tabs_ascx.htm, Tabs.ascx.cs|Admin_Tabs_ascx_cs.htm, Roles.ascx|Admin_Roles_ascx.htm, Roles.ascx.cs|Admin_Roles_ascx_cs.htm, Users.ascx|Admin_Users_ascx.htm, Users.ascx.cs|Admin_Users_ascx_cs.htm, ModulesDefs.ascx|Admin_ModuleDefs_ascx.htm, ModulesDefs.ascx.cs|Admin_ModuleDefs_ascx_cs.htm
+Business Component:AdminDB.cs|Components_AdminDB_cs.htm
+Stored Procedures:UpdatePortalInfo|UpdatePortalInfo.htm,AddTab|AddTab.htm,DeleteTab|DeleteTab.htm,UpdateTabOrder|UpdateTabOrder.htm,AddRole|AddRole.htm,DeleteRole|DeleteRole.htm,UpdateRole|UpdateRole.htm,GetModuleDefinitions|GetModuleDefinitions.htm

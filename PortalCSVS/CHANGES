@@ -1,0 +1,91 @@
+=====================
+.7
+	Release for Mono 1.2+
+		- Added sql scripts to modify owner of table, functions,
+		  sequences.
+		- Consolidated *.sql scripts into single init.sh script
+		  which can be executed as root, but create
+		  database objects with the proper owners and permissions.
+		- Changed default portal name to ibuymono, and default
+		  database username and password to test to match other
+		  asp.net starter kits released for mono.
+
+=====================
+.6
+	Release for Mono 1.0.2 / 1.1.1 
+		- Removed hack from DesktopModules\XmlModule.ascx 
+                  that was added in .5 because the asp:xml control
+                  now loads xml documents using the correct path.
+
+=====================
+.5
+	Release for Mono 1.0 
+		- Corrected bug in Configuration.cs which caused all i
+		  GetModuleSettings calls to return no records.  This 
+		  prevented controls like the XmlModule and ImageModule 
+		  from attempting to load.
+		- Patched a hack into DesktopModules\XmlModule.ascx to 
+		  allow control to load properly.  The mono bug this hides 
+		  is one in which an MS.NET asp:xml control will only load 
+		  an xml document from the relative path within the web app, 
+		  whereas Mono will only load an xml document from an 
+		  absolute system path.
+		- Patched Admin\Logoff.aspx so that logoff now actually 
+		  logs the user out.  This addresses a Mono / mod_mono 
+		  bug where accessing cookies after executing 
+		  FormsAuthentication.SignOut() prevented the authentication 
+		  cookie from actually being removed. 
+		- Replaced usage of NpgsqlDataReader and the Npgsql 
+		  namespace with IDataReader and the System.Data namespace 
+		  within the presentation layer (all .aspx and .ascx files) 
+		  in order to decouple it from the data access layer.  This 
+		  means that in order to reinstate SQL Server database 
+		  support with the Portal, the Components directory is now 
+		  directly replaceable the original IBuySpy Components 
+		  directory. In the case of the SDK version, databases can 
+		  be changed by swapping out the portal.dll and adding the 
+		  Sql Server ConnectionString to the appSettings section in 
+		  Web.config.  This also clears the way for additional 
+		  database support through new data access layers for 
+		  databases (such as Firebird).
+		- Special thanks to Joe Audette for bringing some of the 
+		  above issues to my attention, and otherwise pointing me 
+		  in the right direction coming up with the other solutions.
+
+=====================
+.4
+	Release for Mono Beta 1
+		- Release for both inline style (SDK) and
+                  code-behind style (VS) projects
+		- Makefile included to build VS version,
+		  special thanks to Francisco "Paco" Martinez, 
+		  Todd Berman, et al, for prj2make# at 
+		  http://forge.novell.com/modules/xfmod/project/?prj2make-sharp
+		- Significant changes to INSTALL regarding
+		  installing on Mono Beta 1 and mod_mono .8
+		- Changed configuration of pg_hba.conf to use
+		  password instead of trust method of authentication
+
+=====================
+.3
+	Release for CVS and Mono > .31
+		- Restored ~ to original resource paths
+		- Added ResetSequences.sql to deployment steps
+			Needed for PostgreSQL to start autonumbering
+			table identities after current maximum value
+		- Added this file
+		- Runs on MS .NET 1.1
+
+
+=====================
+.2
+	Interim release for Mono .31
+		-Removed ~ from all resource paths
+
+
+=====================
+.1
+	Initial Release for Mono .30
+
+
+
